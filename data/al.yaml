@@ -1,0 +1,15 @@
+# Download command: bash ./data/get_voc.sh
+# Train command: python train.py --data voc.yaml
+# Default dataset location is next to /yolov5:
+#   /parent_folder
+#     /PCB
+#     /yolov5
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: ./data/score/al/train.txt  # 16551 images
+val: ./data/score/al/val.txt  # 4952 images
+test: ./data/score/al/test.txt 
+# number of classes
+nc: 4
+# class names
+names: ['Zhen_kong', 'ca_shang', 'zang_wu', 'zhe_zhou']
